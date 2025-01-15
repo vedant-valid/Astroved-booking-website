@@ -53,13 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Video Placeholders
     const videoPlaceholders = document.querySelectorAll('.video-placeholder');
-    if (videoPlaceholders.length > 0) {
-        videoPlaceholders.forEach(placeholder => {
-            placeholder.addEventListener('click', function () {
-                alert('Video testimonial will play here.');
-            });
-        });
-    }
 
     // Intersection Observer for Animations
     const observerOptions = {
