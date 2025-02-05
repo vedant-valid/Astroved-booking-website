@@ -158,63 +158,50 @@ nav {
 }
 
 /* Testimonials Section */
-.testimonials {
-    padding: 5rem 0;
-    background-color: var(--background-color);
-}
-
-.video-testimonials {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.testimonial-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
-    margin: 3rem 0;
-}
-
-.video-container {
-    aspect-ratio: 16/9;
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.video-placeholder {
-    height: 100%;
+    padding: 4rem 2rem;
+  }
+  
+  .testimonial-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--light-text);
-    cursor: pointer;
-}
-.video-placeholder video {
-    height: 100%;
-    width: 100%;
-}
-.video-placeholder i {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.testimonial-quotes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.testimonial {
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .testimonial-content {
     padding: 2rem;
-    background-color: var(--card-background);
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial cite {
-    display: block;
-    margin-top: 1rem;
-    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .testimonial-content p:first-of-type {
+    font-style: italic;
+  }
+  
+  .testimonial-content p:last-of-type {
     font-weight: bold;
-    color: var(--secondary-color);
-}
+    margin-top: 1rem;
+  }
+  
+  .testimonial-image {
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 
 /* Booking Section */
 .booking {
